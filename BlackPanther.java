@@ -4,8 +4,8 @@ public class BlackPanther {
     private int age;
     private String env;
     private float weight;
-    private bool sex;
-    private bool reproduced;
+    private boolean sex;
+    private boolean reproduced;
 
     // Getters - Setters 
 
@@ -19,12 +19,12 @@ public class BlackPanther {
 
     //---------------------
 
-    private String getEnv(){
+    String getEnv(){
         return this.env;
     }
 
     private String setEnv(String environment){
-        this.env = environment;
+       return  this.env = environment;
     }
 
     //---------------------
@@ -34,7 +34,7 @@ public class BlackPanther {
     }
 
     private float setWeight(int kila){
-        this.weight = kila;
+       return  this.weight = kila;
     }
 
     //---------------------
@@ -44,7 +44,7 @@ public class BlackPanther {
     }
 
     private boolean setSex(boolean fullo){
-        this.sex = fullo;
+      return  this.sex = fullo;
     }
 
     //---------------------
@@ -54,7 +54,7 @@ public class BlackPanther {
     }
 
     private boolean setReproduced(boolean prod){
-        this.reproduced = prod;
+       return this.reproduced = prod;
     }
 
         //*----- CONTRUCTOR -----
@@ -75,9 +75,23 @@ public class BlackPanther {
      } 
     
         //*  Fae thirama() || + 1/100 
-        public void eatAnimal(int varos){
-            
+        public void eatAnimal(int x){
+            this.weight =+ 0.01;
         }
 
+        //* psakse fagito() || hlikia + 1 
 
+        public void searchFood() {
+            this.age =+ 1;
+        }
+
+        //* anaparagwgh(string , bool) || returns strings 
+
+        public void breed(BlackPanther x){
+            if((this.env == x.env)&&(this.sex != x.sex)){
+                 System.out.println("H anaparagwgh pragmatopioithike");
+            } else {
+                 System.out.println("Adunath h anaparagwgh");
+            }
+        }
 }
