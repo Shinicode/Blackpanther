@@ -17,14 +17,14 @@ public class BlackPanther {
         this.age = ilikia;
     }
 
-    //---------------------
+    //--------------------- 
 
     String getEnv(){
         return this.env;
     }
 
-    private String setEnv(String environment){
-       return  this.env = environment;
+    private void setEnv(String environment){
+         this.env = environment;
     }
 
     //---------------------
@@ -33,8 +33,8 @@ public class BlackPanther {
         return this.weight;
     }
 
-    private float setWeight(int kila){
-       return  this.weight = kila;
+    private void setWeight(int kila){
+         this.weight = kila;
     }
 
     //---------------------
@@ -43,8 +43,8 @@ public class BlackPanther {
         return this.sex;
     }
 
-    private boolean setSex(boolean fullo){
-      return  this.sex = fullo;
+    private void setSex(boolean fullo){
+        this.sex = fullo;
     }
 
     //---------------------
@@ -53,8 +53,8 @@ public class BlackPanther {
         return this.reproduced;
     }
 
-    private boolean setReproduced(boolean prod){
-       return this.reproduced = prod;
+    private void setReproduced(boolean prod){
+        this.reproduced = prod;
     }
 
         //*----- CONTRUCTOR -----
